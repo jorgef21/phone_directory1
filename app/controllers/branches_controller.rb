@@ -4,7 +4,7 @@ class BranchesController < ApplicationController
   # GET /branches
   # GET /branches.json
   def index
-    @branches = Branch.order("name ASC").page(params[:page]).per(4)
+    @branches = Branch.order("name ASC").page(params[:page]).per(5)
   end
 
   # GET /branches/1
