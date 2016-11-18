@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_employee: MyString
+  phone_number: MyString
+  email: MyString
+  sucursal: MyString
+  mobile_phone: MyString
+  stus_flag: false
+
+two:
+  name_employee: MyString
+  phone_number: MyString
+  email: MyString
+  sucursal: MyString
+  mobile_phone: MyString
+  stus_flag: false

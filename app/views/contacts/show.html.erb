@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name employee:</strong>
+  <%= @contact.name_employee %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @contact.phone_number %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @contact.email %>
+</p>
+<% @branch.contacts.each do |contact|  %>
+<p>
+  <strong>Sucursal:</strong>
+  <%= contact.sucursal %>
+</p>
+<%end%>
+
+
+
+
+
+
+
+
+<p>
+  <strong>Mobile phone:</strong>
+  <%= @contact.mobile_phone %>
+</p>
+
+<p>
+  <strong>Stus flag:</strong>
+  <%= @contact.stus_flag %>
+</p>
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>

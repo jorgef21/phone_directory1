@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @branch.name %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @branch.state %>
+</p>
+<p>
+	<strong>Clave:</strong>
+	<%= @branch.iata %>
+</p>
+<% @branch.contacts.each do |contact| %>
+	-<div><%= contact.name_employee %></div>
+	<%end%>
+
+<br>
+<%= link_to 'Edit', edit_branch_path(@branch) %> |
+<%= link_to 'Back', branches_path %>
+
+

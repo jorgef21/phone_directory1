@@ -1,0 +1,2 @@
+PhoneDirectory1::Application.config.secret_key_base = 'ba2c0055a7cb3653ebdf90f0536c5a3fb4a1a3b67ca9fa51633adbe8a639c9276623ea51851d91cef88d562ccab5e4b511aa929424ecc548030bdfbe387bc8fc'
+

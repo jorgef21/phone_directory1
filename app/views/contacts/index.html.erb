@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+<h1>Listing Contacts</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name employee</th>
+      <th>Phone number</th>
+      <th>Email</th>
+      <th>Sucursal</th>
+      <th>Mobile phone</th>
+      <th>Stus flag</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.name_employee %></td>
+        <td><%= contact.phone_number %></td>
+        <td><%= contact.email %></td>
+        <td><%= contact.branch_id %></td>
+        <td><%= contact.mobile_phone %></td>
+        <td><%= contact.stus_flag %></td>
+        <td><%= link_to 'Show', contact %></td>
+        <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
+        <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to 'New Contact', new_contact_path,{class:'btn btn-success'} %>
+</div>
